@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+    .upper-header {
+        background-color: black;
+        color: white;
+        text-align: right;
+    }
+
+        .location {
+            padding: 1%;
+        }
+        
+    .lower-header {
+        background-color: gainsboro;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+    }
+
+        .logo {
+            
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            max-width: 50%;
+        }   
+            .cta-bar {
+                list-style-type: none;
+                background-color: lime;
+                border-radius: .5rem;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            .nav-links {
+                list-style-type: none;
+                background-color: skyblue;
+                border-radius: .5rem;
+                /* margin: 0;
+                padding: 0; */
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+
+            .hamburger {
+                display: none;
+                flex-direction: column;
+
+            }
+                .hamburger .bar {
+                    width: 25px;
+                    height: 3px;
+                    background-color: white;
+                    margin: 4px 0;
+                }
+
+
+.credits {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/* Media queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-links {
+        flex-direction: column;
+        transform: translateX(100%);
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        background-color: gainsboro;
+        height: 100%;
+    }
+    .hamburger {
+        display: flex;
+        z-index: 1;
+    }
+     /* Hamburger conditionals */
+    .nav-links[data-visible="true"] {
+        transform: translateX(0%);
+        transition: 0.3s ease-in;
+    }
+    .nav-links[data-visible="false"] {
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
+    } 
+}
+
+
