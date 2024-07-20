@@ -17,6 +17,8 @@ header {
 
         .location {
             padding: 1%;
+            text-decoration: none;
+            color: inherit;
         }
         
     .lower-header {
@@ -45,8 +47,9 @@ header {
                 padding: 0;
                 display: flex;
                 justify-content: center;
+                font-size: x-large;
             }
-
+                
             .nav-links {
                 list-style-type: none;
                 background-color: skyblue;
@@ -55,6 +58,7 @@ header {
                 padding: 0; */
                 display: flex;
                 justify-content: space-evenly;
+                font-size: x-large;
             }
 
 
