@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -83,14 +85,35 @@ header {
 
 
 main {
-    
+    flex-grow: 1;
 }
+    /* index */
+    .map-section{
+        display: flex;
+        justify-content: center;
+        padding: 20%;
+    }
+        .row {
+            display: flex;
+            border: 2px solid #333;
+            width: 80%;
+        }
+            .details {
+                border-right: 2px solid #333;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .map {
+                border:0;
+            }
 
 .credits {
     background-color: black;
     color: white;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     text-align: center;
 }
@@ -111,7 +134,8 @@ main {
         right: 0px;
         top: 0px;
         background-color: gray;
-        height: 100%;
+        height: 100vh;
+        border-radius: 0;
     }
     .hamburger {
         display: flex;
