@@ -134,8 +134,9 @@ main {
         right: 0px;
         top: 0px;
         background-color: gray;
-        height: 100vh;
+        height: 100%;
         border-radius: 0;
+        margin: 0%;
     }
     .hamburger {
         display: flex;
