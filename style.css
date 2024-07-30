@@ -9,6 +9,10 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
 }
 
     .upper-header {
@@ -28,8 +32,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1%;
-        height: 4vh;
+        padding: 2%;
+        height: 2vh;
     }
 
         .Logo {
@@ -51,7 +55,7 @@ header {
                 padding: 0;
                 margin-top: 1%;
                 display: flex;
-                justify-content: center;
+                justify-content: space-evenly;
                 font-size: x-large;
             }
                 
@@ -86,30 +90,53 @@ header {
 
 main {
     flex-grow: 1;
+    margin-top: 10%;
 }
-    /* index */
-    .map-section{
-        display: flex;
-        justify-content: center;
-        padding: 20%;
-    }
-        .row {
-            display: flex;
-            border: 2px solid #333;
-            width: 80%;
-        }
-            .details {
-                border-right: 2px solid #333;
-                flex-grow: 1;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
 
-            .map {
-                border:0;
-            }
+
+/* index */
+.schedule {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
+    .weekday {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex: 1;
+        max-width: 30%;
+    }
+    .weekend {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        max-width: 20%;
+
+    }
+.map-section{
+    display: flex;
+    justify-content: center;
+    padding: 20%;
+}
+    .row {
+        display: flex;
+        border: 2px solid #333;
+        width: 80%;
+    }
+        .details {
+            border-right: 2px solid #333;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map {
+            border:0;
+        }
 
 .credits {
     background-color: black;
