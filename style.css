@@ -92,7 +92,10 @@ main {
     flex-grow: 1;
     margin-top: 10%;
 }
-
+    h1 {
+        text-align: center;
+        font-size: 125px;
+    }
 
 /* index */
 .schedule {
@@ -102,19 +105,25 @@ main {
 }
     .weekday {
         display: flex;
-        justify-content:space-around;
         align-items: center;
-        flex: 1;
-        max-width: 30%;
     }
+        .m-t-w {
+            margin-right: 20%;
+        }
+        .weekday p {
+            margin: 10%;
+            white-space: nowrap;
+        }
+
     .weekend {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        flex: 1;
-        max-width: 20%;
-
     }
+        .weekend p {
+            margin: 10%;
+            white-space: nowrap;
+        }
+
 .map-section{
     display: flex;
     justify-content: center;
@@ -138,18 +147,8 @@ main {
             border:0;
         }
 
-.credits {
-    background-color: black;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
 
 /* About */
-.A-title {
-    text-align: center;
-    font-size: 150px;
-}
 
 .section {
     display: flex;
@@ -163,6 +162,47 @@ main {
     .section p {
         font-size: 20px;
     }
+
+/* Schedule */
+.S-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schedule-table {
+    border-collapse: collapse;
+    margin-left: auto; 
+    margin-right: auto;
+    table-layout: fixed;
+}
+    .schedule-table tr {
+        line-height: 1500%;
+    }
+
+        .schedule-table th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            font-size: 60px;
+            padding: 20px;
+        }
+        .schedule-table td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            white-space: nowrap;
+            font-size: 40px;
+            padding: 20px;
+            width: 14.28%;
+
+        }
+
+.credits {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
 
 /* Media queries */
 @media (max-width: 768px) {
