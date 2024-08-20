@@ -36,8 +36,7 @@ header {
     }
 
         .Logo {
-           text-decoration: none;
-           color: inherit;
+           margin-top: 5px;
            margin-left: 2%;
         }
 
@@ -144,6 +143,9 @@ main {
         width: 100%;
         justify-content: center;
     }
+        .row a img {
+            margin-top: 5px;
+        }
         .details {
             border: 2px solid #333;
             display: flex;
@@ -253,15 +255,22 @@ main {
     }
     .nav-links {
         flex-direction: column;
+        align-items: center;
+        justify-content: start;
         transform: translateX(100%);
         position: fixed;
         right: 0px;
         top: 0px;
         background-color: gray;
+        width: 30%;
         height: 100%;
         border-radius: 0;
         margin: 0%;
+        background-color: #00a2ff;
     }
+        .nav-links li {
+            margin-top: 75%;
+        }
     .hamburger {
         display: flex;
         z-index: 1;
@@ -304,8 +313,11 @@ main {
     }
 }
 @media (max-width: 500px) {
+    .details a img {
+        width: 95%;
+        height: 95%;
+    }
     .details {
         white-space: wrap;
-
     }
 }
