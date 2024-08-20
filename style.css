@@ -5,7 +5,7 @@ body {
 }
 
 
-
+/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -136,25 +136,31 @@ main {
     display: flex;
     justify-content: center;
     padding: 20%;
+
 }
     .row {
         display: flex;
-        border: 2px solid #333;
-        width: 80%;
-        background-color:  #00a2ff;
         color: #F8F9FA;
+        width: 100%;
+        justify-content: center;
     }
         .details {
-            border-right: 2px solid #333;
-            flex-grow: 1;
+            border: 2px solid #333;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-size: 30px;
+            white-space: nowrap;
+            width: 100%;
+            background-color:  #00a2ff;
         }
 
         .map {
-            border:0;
+            border: 2px solid #333;
+            border-left: 0;
+            background-color: white;
+            width: 100%;
         }
 
 
@@ -234,6 +240,8 @@ main {
 }
 
 /* Media queries */
+
+/* Hamburger query */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row;
@@ -269,6 +277,7 @@ main {
     } 
 }
 
+/* Header low window size */
 @media (max-width: 442px) {
     .cta-bar {
         display: none;
@@ -278,12 +287,25 @@ main {
     }
 }
 
-
+/* Schedule low window size */
 @media (max-width: 950px) {
     .schedule {
         flex-direction: column;
     }
     .Clock-section {
         margin: 1%;
+    }
+}
+
+/* Map low window size */
+@media (max-width: 600px) {
+    .map {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .details {
+        white-space: wrap;
+
     }
 }
