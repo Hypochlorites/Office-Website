@@ -130,11 +130,33 @@ main {
             margin: 4px;
         }
 
+.insurance {
+    margin-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #333;
+    background-color:  #00a2ff;
+    color: #F8F9FA;
+    border-radius: 20px;
+}
+    .insurance img {
+        margin-top: 50px;
+    }
+    .insurance p {
+        font-size: 60px;
+        text-align: center;
+    }
+
 .map-section{
     display: flex;
     justify-content: center;
     padding: 20%;
-
+    padding-top: 0;
+    margin-top: 400px;
 }
     .row {
         display: flex;
