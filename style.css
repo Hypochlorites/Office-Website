@@ -134,7 +134,7 @@ main {
     margin-top: 400px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,7 +378,7 @@ main {
     }
 }
 
-/* Map low window size */
+/* Map and insurance low window size */
 @media (max-width: 600px) {
     .map {
         display: none;
@@ -389,7 +389,21 @@ main {
         width: 95%;
         height: 95%;
     }
+    .insurance a img {
+        width: 95%;
+        height: 95%;
+    }
     .details {
         white-space: wrap;
     }
+    .insurance p {
+        font-size: 30px;
+    }
+
+@media (max-width: 250px) {
+    .insurance p {
+        font-size: 20px;
+    }
 }
+}
+
