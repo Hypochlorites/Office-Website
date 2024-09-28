@@ -197,6 +197,7 @@ main {
     align-items: center;
     padding: 1%;
     text-align: center;
+    margin: 5%;
 }
     .section h2 {
         font-size: 80px;
@@ -225,6 +226,7 @@ main {
     margin-left: auto; 
     margin-right: auto;
     table-layout: fixed;
+    margin-bottom: 500px;
 }
     .schedule-table tr {
         line-height: 1500%;
@@ -253,6 +255,7 @@ main {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 300px;
 }
     .i-section p {
         font-size: 50px;
@@ -283,6 +286,7 @@ main {
 .C-description {
     text-align: center;
     font-size: 40px;
+    margin-bottom: 500px;
 }
 
 
@@ -292,9 +296,8 @@ main {
     color: white;
     width: 100%;
     text-align: center;
-    margin-top: 50%;
 }
-
+    
 /* Media queries */
 
 /* Header medium window size */
