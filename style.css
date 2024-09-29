@@ -98,6 +98,9 @@ header {
                 }
 
 
+.home {
+    margin-top: 0;
+}
 main {
     flex-grow: 1;
     margin-top: 10%;
@@ -108,6 +111,16 @@ main {
     }
 
 /* index */
+.front {
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: #F8F9FA;
+    font-size: 250px;
+    width: 80%;
+    border-radius: 20px;
+
+}
 .schedule {
     display: flex;
     justify-content: space-evenly;
@@ -300,13 +313,21 @@ main {
     
 /* Media queries */
 
-/* Header medium window size */
+/* Header and home medium window size */
 @media (max-width: 1440px) {
     .cta-bar {
         font-size: 20px;
         width: 100%;
     }
+    .front {
+        font-size: 200px;
+    }
 
+@media (max-width: 1000px) {
+    .front {
+        font-size: 150px;
+    }
+}
 /* About & Office Hours page medium window size */
 @media (max-width: 1200px) {
     .section h2 {
@@ -381,8 +402,15 @@ main {
     .hamburger {
         margin-left: auto;
     }
+    
 }
 
+/* Home low window size */
+@media (max-width: 800px) {
+    .front {
+        font-size: 100px;
+    }
+}
 /* Schedule low window size */
 @media (max-width: 950px) {
     .schedule {
