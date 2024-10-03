@@ -64,6 +64,8 @@ header {
             }   
                     .cta-bar a {
                         white-space: nowrap;
+                        text-decoration: none;
+                        color: inherit;
                     }
 
             .nav-links {
