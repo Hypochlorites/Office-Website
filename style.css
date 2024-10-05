@@ -100,9 +100,6 @@ header {
                 }
 
 
-.home {
-    margin-top: 0;
-}
 main {
     flex-grow: 1;
     margin-top: 10%;
@@ -121,7 +118,6 @@ main {
     font-size: 250px;
     width: 80%;
     border-radius: 20px;
-
 }
 .schedule {
     display: flex;
@@ -236,31 +232,55 @@ main {
     font-size: 50px;
 }
 
-.schedule-table {
+.schedule-table-row {
     border-collapse: collapse;
     margin-left: auto; 
     margin-right: auto;
     table-layout: fixed;
     margin-bottom: 500px;
 }
-    .schedule-table tr {
+    .schedule-table-row tr {
         line-height: 1500%;
     }
 
-        .schedule-table th {
+        .schedule-table-row th {
             border: 1px solid #dddddd;
             text-align: center;
             font-size: 60px;
             padding: 20px;
         }
-        .schedule-table td {
+        .schedule-table-row td {
             border: 1px solid #dddddd;
             text-align: center;
             white-space: nowrap;
             font-size: 40px;
             padding: 20px;
             width: 14.28%;
+        }
 
+.schedule-table-column {
+    border-collapse: collapse;
+    margin-left: auto; 
+    margin-right: auto;
+    table-layout: fixed;
+    display: none;
+}
+    .schedule-table-column tr {
+        line-height: 1500%;
+    }
+         .schedule-table-column th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            font-size: 60px;
+            padding: 20px;
+        }
+        .schedule-table-column td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            white-space: nowrap;
+            font-size: 40px;
+            padding: 20px;
+            width: 14.28%;
         }
 /* Insurance */
 .i-section {
@@ -301,7 +321,7 @@ main {
 .C-description {
     text-align: center;
     font-size: 40px;
-    margin-bottom: 500px;
+    margin-bottom: 700px;
 }
 
 
@@ -324,7 +344,7 @@ main {
     .front {
         font-size: 200px;
     }
-
+}
 @media (max-width: 1000px) {
     .front {
         font-size: 150px;
@@ -452,21 +472,73 @@ main {
 }
 }
 
+/* Office table queries */ 
+@media (max-width: 2000px) {
+    .schedule-table-row th {
+        font-size: 40px;
+    }
+    .schedule-table-row td{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1400px) {
+    .schedule-table-row th {
+        font-size: 30px;
+    }
+    .schedule-table-row td{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1400px) {
+    .schedule-table-row th {
+        font-size: 25px;
+    }
+    .schedule-table-row td{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1000px) {
+    .schedule-table-row {
+        display: none;
+    }
+    .schedule-table-column {
+        display: table;
+    }
+}
+@media (max-width: 500px) {
+    .schedule-table-column th {
+        font-size: 30px;
+    }
+    .schedule-table-column td{
+        font-size: 20px;
+    }
+}
+
+
+
 /* Titles low window size */
-@media (max-width: 250px) {
+@media (max-width: 500px) {
     .A-title {
         font-size: 80px;
+        margin-top: 100px;
     }
     .C-title {
         font-size: 80px;
+        margin-top: 100px;
     }
     .S-title {
         font-size: 80px;
+        margin-top: 100px;
     }
     .i-title {
         font-size: 80px;
+        margin-top: 100px;
     }
     .front {
-        font-size: 80px;
+        font-size: 60px;
+        margin-top: 100px;
+    }
+    .m-t-a {
+        font-size: 20px;
     }
 }
