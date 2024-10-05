@@ -368,8 +368,10 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 80%;
     }
 }
+
 /* Hamburger query */
 @media (max-width: 768px) {
     .navbar {
