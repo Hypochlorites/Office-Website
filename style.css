@@ -452,3 +452,21 @@ main {
 }
 }
 
+/* Titles low window size */
+@media (max-width: 250px) {
+    .A-title {
+        font-size: 80px;
+    }
+    .C-title {
+        font-size: 80px;
+    }
+    .S-title {
+        font-size: 80px;
+    }
+    .i-title {
+        font-size: 80px;
+    }
+    .front {
+        font-size: 80px;
+    }
+}
